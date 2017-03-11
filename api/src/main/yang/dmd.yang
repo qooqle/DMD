@@ -1,0 +1,9 @@
+module dmd {
+    yang-version 1;
+    namespace "urn:opendaylight:params:xml:ns:yang:dmd";
+    prefix "dmd";
+
+    revision "2015-01-05" {
+        description "Initial revision of dmd model";
+    }
+}
