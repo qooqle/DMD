@@ -6,4 +6,10 @@ module dmd {
     revision "2015-01-05" {
         description "Initial revision of dmd model";
     }
+
+    container test {
+    	leaf valiables {
+    		type string;
+    	}
+    }
 }
