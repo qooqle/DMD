@@ -7,9 +7,14 @@ module dmd {
         description "Initial revision of dmd model";
     }
 
-    container test {
-    	leaf valiables {
+    container level1 {
+    	leaf valiable {
     		type string;
     	}
+	container level2 {
+    		leaf valiable {
+    			type string;
+    		}
+	}
     }
 }
