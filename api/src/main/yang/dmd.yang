@@ -17,4 +17,25 @@ module dmd {
     		}
 	}
     }
+    rpc dmd-test-api {
+
+        description
+            "Set a list of conditions for a particular endpoint group.
+             These conditions will apply to all endpoints in the
+             endpoint group.  These conditions will be added to the
+             existing list of conditions.";
+
+        input {
+		leaf input-valiable {
+			type string;
+		}
+        }
+        output {
+		leaf output-result {
+			type string;
+		}
+        }
+
+
+    }
 }
