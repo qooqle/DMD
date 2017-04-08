@@ -18,7 +18,7 @@ public class DmdServiceImple implements DmdService {
     @Override
     public Future<RpcResult<DmdTestApiOutput>> dmdTestApi(DmdTestApiInput input) {
         DmdTestApiOutputBuilder dmdBuilder = new DmdTestApiOutputBuilder();
-        dmdBuilder.setInputValiable("Dmd " + input.getInputValiable());
+        dmdBuilder.setOutputResult("Dmd " + input.getInputValiable());
         return RpcResultBuilder.success(dmdBuilder.build()).buildFuture();
     }
 }
