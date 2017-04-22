@@ -14,7 +14,7 @@ import org.opendaylight.yang.gen.v1.urn.opendaylight.params.xml.ns.yang.dmd.rev1
 import org.opendaylight.yang.gen.v1.urn.opendaylight.params.xml.ns.yang.dmd.rev150105.DmdTestApiOutputBuilder;
 import org.opendaylight.yangtools.yang.common.RpcResult;
 import org.opendaylight.yangtools.yang.common.RpcResultBuilder;
-public class DmdServiceImple implements DmdService {
+public class DmdServiceImpl implements DmdService {
     @Override
     public Future<RpcResult<DmdTestApiOutput>> dmdTestApi(DmdTestApiInput input) {
         DmdTestApiOutputBuilder dmdBuilder = new DmdTestApiOutputBuilder();

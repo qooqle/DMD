@@ -37,7 +37,7 @@ public class DmdProvider implements BindingAwareProvider, AutoCloseable{
     @Override
     public void onSessionInitiated(ProviderContext session) {
         LOG.info("HelloProvider Session Initiated");
-        dmdService = session.addRpcImplementation(DmdService.class, new DmdServiceImple());
+        dmdService = session.addRpcImplementation(DmdService.class, new DmdServiceImpl());
     }
 
     /**
